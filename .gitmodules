@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = git@github.com:Litvinov1618/crutches-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:Litvinov1618/crutches-frontend.git
