@@ -28,4 +28,4 @@ services:
     restart: unless-stopped
     build: ./frontend
     ports:
-      - 4200:4200
+      - 4000:4200
