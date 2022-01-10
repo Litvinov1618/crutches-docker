@@ -53,24 +53,17 @@ CREATE TABLE `user` (
   `email` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `account` float NOT NULL
+  `account` float NOT NULL,
+  `isAdmin` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `email`, `name`, `password`, `account`) VALUES
-(2, 'john@email.com', 'John', '1234567890', 0),
-(3, 'email@email.com', 'John', '12345678', 894.09),
-(8, 'email1@email.com', 'Vasya', '12345678', 0),
-(9, 'email2@email.com', 'Peppa', '322222', 0),
-(11, 'email89@email.com', 'SomeName', '123456789', 300),
-(12, 'emaidasdl@email.com', 'emaidasdl@email.com', 'dasdasfasfasf', 0),
-(13, 'adasdsad@email.com', 'adasdsad@email.com', '12345676', 0),
-(14, 'eeeemail@email.com', 'eeeemail@email.com', '12345676543', 0),
-(15, 'johnjohn@email.com', 'Buzz Lightyear', '898012830', 0),
-(16, 'emaidsadadl@email.com', 'Igor', '12345678', 0);
+INSERT INTO `user` (`id`, `email`, `name`, `password`, `account`, `isAdmin`) VALUES
+(1, 'email@email.com', 'John Doe', '12345678', 894.09, 0),
+(16, 'bigboss@email.com', 'Big Boss', '12345678', 0, 1);
 
 --
 -- Indexes for dumped tables
